@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "task": "nail_disease_semantic_segmentation",
+  "description": "指甲病害多类别语义分割。掩膜为单通道 uint8 PNG，像素值即类别索引。",
+  "classes": [
+    "_background_",
+    "healthy",
+    "onychomycosis",
+    "psoriasis"
+  ],
+  "class_names_cn": {
+    "_background_": "背景(皮肤/指甲以外区域)",
+    "healthy": "健康指甲",
+    "onychomycosis": "甲癣(灰指甲)",
+    "psoriasis": "甲银屑病"
+  },
+  "palette": {
+    "_background_": [
+      0,
+      0,
+      0
+    ],
+    "healthy": [
+      46,
+      204,
+      113
+    ],
+    "onychomycosis": [
+      241,
+      196,
+      15
+    ],
+    "psoriasis": [
+      231,
+      76,
+      60
+    ]
+  },
+  "ignore_index": 255,
+  "label_aliases": {
+    "background": "_background_",
+    "bg": "_background_",
+    "背景": "_background_",
+    "健康": "healthy",
+    "健康指甲": "healthy",
+    "正常": "healthy",
+    "normal": "healthy",
+    "甲癣": "onychomycosis",
+    "灰指甲": "onychomycosis",
+    "真菌": "onychomycosis",
+    "甲真菌病": "onychomycosis",
+    "fungal": "onychomycosis",
+    "银屑病": "psoriasis",
+    "甲银屑病": "psoriasis",
+    "牛皮癣": "psoriasis"
+  },
+  "labelme_gui_labels": [
+    "healthy",
+    "onychomycosis",
+    "psoriasis"
+  ],
+  "folder_to_class": {
+    "healthy": "healthy",
+    "onychomycosis": "onychomycosis",
+    "psoriasis": "psoriasis"
+  }
+}

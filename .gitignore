@@ -1,0 +1,49 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.ipynb_checkpoints/
+
+# ---- 虚拟环境 ----
+.venv/
+.venv-*/
+venv/
+env/
+.conda/
+
+# ---- 数据与模型（体积大，请从网盘下载，勿提交） ----
+data/
+images/
+masks/
+masks3/
+masks_color/
+*.zip
+*.tar.gz
+*.pth
+*.onnx
+*.ckpt
+
+# ---- 训练产物 ----
+work_dirs/
+vis/
+vis_*/
+vis_data/
+outputs/
+runs/
+
+# ---- 中间/临时产物 ----
+qc/
+qc_*/
+_qc/
+*.log
+captures/
+.selftest/
+*.bak
+
+# ---- 编辑器与系统 ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

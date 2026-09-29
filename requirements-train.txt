@@ -1,0 +1,25 @@
+# 训练环境依赖（推荐 Python 3.10）
+#
+# 版本组合经过验证，改动前请注意：
+#   * torch 2.1.2 / mmcv 2.1.0 都是 NumPy 1.x ABI 编译的，numpy 必须 <2
+#   * opencv-python 5.x 声明依赖 numpy>=2，一旦升级会与上面冲突
+#   * ftfy / regex 被 mmseg.utils.tokenizer 无条件 import，但 PyPI 包未声明为依赖
+
+torch==2.1.2
+torchvision==0.16.2
+mmengine==0.10.4
+mmcv==2.1.0
+mmsegmentation==1.2.2
+
+numpy==1.26.4
+opencv-python==4.9.0.80
+ftfy
+regex
+
+# ONNX 导出与验证
+onnx==1.16.2
+onnxruntime==1.19.2
+onnxsim
+
+# 数据标注
+labelme
